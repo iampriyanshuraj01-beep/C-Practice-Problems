@@ -1,0 +1,536 @@
+//first program
+/*#include<stdio.h>
+int main(){
+    printf("Hello World");
+    return 0;
+}*/
+
+//data types
+/*include<stdio.h>
+int main(){
+    float a = 4.55;
+    int number = 54;
+    char star ='*';
+    printf("%d\n",number);
+    printf("%f\n",a);
+    printf("%c",star);
+    return 0;
+}*/
+
+//adding 2 numbers
+/*
+#include<stdio.h>
+int main(){
+    int a , b ;
+    printf("enter a");
+    scanf("%d",&a);
+    printf("enter b");
+    scanf("%d",&b);
+    printf("additon is %d", a+b);
+    return 0;
+}*/
+
+//area of square
+/*
+#include<stdio.h>
+int main(){
+    int side;
+    printf("enter side");
+    scanf("%d",&side);
+    printf("area is %d",side*side);
+    return 0;
+}*/
+
+//area of a circle
+/*
+#include<stdio.h>
+int main(){
+    float radious;
+    printf("enter radious");
+    scanf("%f", &radious);
+    printf("area of circle is %f" ,3.14*radious*radious);
+    return 0;
+}*/
+
+// perimeter of rectangle
+/*
+#include<stdio.h>
+int main(){
+    int length , breath;
+    printf("enter length");
+    scanf("%d",&length);
+    printf("enter breath");
+    scanf("%d",&breath);
+    printf("perimeter is %d", length*breath);
+    return 0;
+}*/
+
+//cube roots
+/*
+#include<stdio.h>
+int main(){
+    int number;
+    printf("enter number");
+    scanf("%d",&number);
+    printf("cube of inputed number is %d",number*number*number);
+    return 0;
+}*/
+
+//program to check if a number is divisible by 2 or not
+/*
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int a;
+    printf("enter number");
+    scanf("%d", &a);
+    printf("%d",a % 2 == 0);
+    return 0;
+}*/
+
+//print 1 (true) or 0(false) for following statements:
+//a. if it's sunday & it's snowing -> true
+/*
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int itsSunday = 1;
+    int itsSnowing = 1;
+    printf("%d \n", itsSunday && itsSnowing);
+    return 0;
+}*/
+
+//b. if it's monday or it's raining
+/*
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int itsMonday = 1;
+    int itsRaining = 1;
+    printf("%d \n", itsMonday || itsRaining);
+    return 0;
+}*/
+
+//c. if a number is greater than 9 & less than 100
+/*
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int x;
+    printf("enter number");
+    scanf("%d", &x);
+    printf("%d \n", x>9 && x<100);
+    return 0;
+}*/
+
+//print adult and not adult
+/*#include<stdio.h>
+int main(){
+int age;
+printf("enter age");
+scanf("%d", &age);
+if(age>18){
+    printf("adult");
+}
+else{
+    printf("not adult");
+}
+return 0;
+}*/
+
+//print child , teenage , adult
+/*#include<stdio.h>
+int main(){
+    int age;
+    printf("enter age");
+    scanf("%d",&age);
+
+    if(age>=18){
+        printf("adult \n");
+    }
+    else if(age > 13 && age < 18){
+        printf("teenager \n");
+    }
+    else{
+        printf("child");
+    }
+    return 0;
+}*/
+
+//average of 3 number
+/*
+#include<stdio.h>
+int main(){
+    int a , b , c;
+    printf("enter number");
+    scanf("%d %d %d", &a , &b , &c);
+    printf("%d", (a+b+
+    c)/3);
+    return 0;
+}*/
+ 
+// use of ternarry operator
+/*
+#include<stdio.h>
+int main(){
+    int age;
+    printf("enter age");
+    scanf("%d",&age);
+    age>=18 ? printf("adult \n") : printf("not adult \n");
+}*/
+
+//use of switch
+/*
+#include<stdio.h>
+int main(){
+    int day;
+    printf("enter day 1-7");
+    scanf("%d",&day);
+    switch (day)
+    {
+        case 1: printf("monday \n");
+        break;
+        case 2: printf("tuesday \n");
+        break;
+        case 3: printf("wednesday \n");
+        break;
+        case 4: printf("thursday \n");
+        break;
+        case 5: printf("friday \n");
+        break;
+        case 6: printf("saturday \n");
+        break;
+        case 7: printf("sunday \n");
+        break;
+    
+    default:printf("not a valid day");
+        break;
+    }
+}*/
+
+//use of nested if
+/*
+#include<stdio.h>
+int main(){
+    int number;
+    printf("enter number");
+    scanf("%d",&number);
+    if(number>=0){
+        printf("positive \n");
+        if(number%2==0){
+            printf("even \n");
+        }else{
+            printf("odd \n");
+        }
+    }else{
+        printf("negative");
+    }
+}*/
+
+ //write a program to check if a student passed or failed. 
+ /*
+ #include<stdio.h>
+ int main(){
+    int marks;
+    printf("enter marks");
+    scanf("%d",&marks);
+    if(marks<=30){
+        printf("fail \n");
+    }else if(marks > 30 && marks <= 100){
+        printf("pass \n");
+    }else{
+        printf("wrong marks");
+    }
+    return 0;
+}*/
+
+//marks grading
+/*
+#include<stdio.h>
+int main(){
+    int marks;
+    printf("enter marks");
+    scanf("%d",&marks);
+    if(marks < 30){
+        printf("c");
+    }else if(marks >= 30 && marks < 70){
+        printf("B");
+    }else if(marks >= 70 && marks <90){
+        printf("A");
+    }else{
+        printf("A+");
+    }
+    return 0;
+    }*/
+
+//write a program to find if a character entered by user is uppercase or not
+/*
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("enter character");
+    scanf("%c",&ch);
+    if(ch >= 'a' && ch <= 'z'){
+        printf("lowercase");
+    }else if (ch >= 'A' && ch <= 'Z' ){
+        printf("Uppercase");
+    }
+    else{
+        printf("not english letter");
+    }
+    return 0;
+}*/
+  
+ //use of for loop
+ /*
+ #include<stdio.h>
+ int main(){
+    for(int i = 1 ; i<=5 ; i = i +1){
+        printf("hello world \n");
+    }
+    return 0;
+ }*/
+
+ //print 1 to 100
+ /*
+ #include<stdio.h>
+ int main(){
+    for(int i = 1 ; i <= 100 ; i = i+1){
+        printf("%d \n",i);
+    }
+    return 0;
+ }*/
+
+ //pre & post increment
+ /*
+ #include<stdio.h>
+ int main(){
+    int i = 1;
+    printf("%d \n", i++);
+    printf("%d \n", i);
+    return 0;
+ }*/
+
+ /*
+ #include<stdio.h>
+ int main(){
+    int i = 1;
+    printf("%d \n", ++i);
+    printf("%d \n", i);
+    return 0;
+ }*/
+
+//pre & post decrement
+ /*
+ #include<stdio.h>
+ int main(){
+    int i = 1;
+    printf("%d \n", i--);
+    printf("%d \n", i);
+    return 0;
+ }*/
+
+ /*
+ #include<stdio.h>
+ int main(){
+    int i = 1;
+    printf("%d \n", --i);
+    printf("%d \n", i);
+    return 0;
+ }*/
+
+ //loop counter can be float or even character
+ /*
+ #include<stdio.h>
+ int main(){
+    for(float i = 1.0; i<=5.0 ; i++){
+        printf("%f \n", i);
+    }
+    for(char ch='a'; ch<+'z'; ch++){
+        printf("%c \n", ch);
+    }
+    return 0;
+ }*/
+
+// infinite loop
+/*
+#include<stdio.h>
+int main(){
+    for(int i= 1 ;  ; i++){
+        printf("hello world \n");
+    }
+    return 0;
+}*/
+
+ //print hello worls 5 times using while loop
+ /*
+ #include<stdio.h>
+ int main(){
+    int i = 1;
+    while(i<5){
+        printf("hello world \n");
+        i++;
+    }
+    return 0;
+ }*/
+
+//use of do while
+/*
+ #include<stdio.h>
+int main(){
+    int i = 1;
+    do{
+        printf("%d \n", i);
+        i++;
+    }while(i<=5);
+    return 0;
+}*/
+
+//print the sum of first n natural numbers.
+// n=4
+//also print them in reverse
+/*
+#include<stdio.h>
+int main(){
+    int n;
+    printf("enter number");
+    scanf("%d", &n);
+    int sum =0;
+    for(int i = 1 ; i <= n ; i++ ){
+        sum = sum + i;
+    }
+    printf("sum is %d \n", sum);
+    for(int i=n; i>=1 ; i--){
+        printf("%d\n",i);
+    }
+    return 0;   
+}*/
+
+//print the table of a number inout by the user. n = 2;
+/*
+#include<stdio.h>
+int main(){
+    int n;
+    printf("enter number");
+    scanf("%d",&n);
+    for(int i = 1 ; i<=10 ; i++){
+        printf("%d \n",n*i);
+    }
+    return 0;
+}*/
+
+//break statement
+/*
+#include<stdio.h>
+int main(){
+    for(int i = 1 ; i<=5 ; i++){
+        if(i==3){
+            break;
+        }
+        printf("%d \n" , i );
+    }
+    printf("end");
+    return 0;
+}*/
+
+//keep taking numbers as input from user until user enters an odd number.
+/*
+#include<stdio.h>
+int main(){
+    int n;
+    do{
+        printf("enter number");
+        scanf("%d",&n);
+        printf("%d \n",n);
+
+        if(n % 2 != 0){
+            break;
+        }
+
+    }while(1);
+    printf("thank you");
+    return 0;
+}*/
+
+//keep taking numbers as input from user until user enters a number which is multiple of 7
+/*
+#include<stdio.h>
+int main(){
+    int n;
+    do{
+    printf("enter number");
+    scanf("%d",&n);
+    printf("%d \n",n);
+    if(n%7==0){
+        break;
+    }
+    }while(1);
+    printf("thankyou");
+    return 0;
+}*/
+
+//print all numbers from 1 to 10 except for 6.
+/*
+#include<stdio.h>
+int main(){
+    for(int i = 1; i<=10 ;i++){
+        if(i==6){
+            continue;
+        }
+        printf("%d \n", i);
+    }
+    return 0;
+}*/
+
+//print all the odd numbers from 5 to 50.
+/*
+#include<stdio.h>
+int main(){
+    for (int i = 5 ; i<=50 ; i++){
+        if(i%2==0){
+            continue;
+        }
+        printf("%d \n", i);
+    }
+    return 0;
+}*/ 
+
+//print the factorial of a number n.
+/*
+#include<stdio.h>
+int main(){
+    int n;
+    printf("enter number");
+    scanf("%d",&n);
+    int fact = 1;
+    for(int i=1; i<=n ; i++){
+        fact=fact*i;
+    }
+    printf("final factorial is %d", fact);
+    return 0;
+}*/
+ 
+//print reverse of the table for a number n.
+/*
+#include<stdio.h>
+int main(){
+    int n;
+    printf("enter number");
+    scanf("%d",&n);
+    for(int i = 10 ; i>=1 ; i--){
+        printf("%d \n",n*i);
+    }
+    return 0;
+}*/
+
+//calculate the sum of all numbers between 5 and 50.(including 5 and 50
+/*
+#include<stdio.h>
+int main(){
+    int sum = 0;
+    for(int i = 5; i<=50 ; i++){
+        sum = sum+i;
+    }
+    printf("sum is %d", sum);
+    return 0;
+}*/
